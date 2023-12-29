@@ -20,6 +20,14 @@ export const HeaderApp = styled.div`
         font-size: 1.6rem;
         opacity: 0.6;
     }
+    @media(max-width: 430px) {
+        h1 {
+            font-size: 1.6rem;
+        }
+        span {
+            font-size: 1.2rem;
+        }
+    }
 `;
 
 export const ContentCharacters = styled.div`
@@ -28,6 +36,12 @@ export const ContentCharacters = styled.div`
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 1.6rem;
         margin-top: 1.6rem;
+        @media(max-width: 991px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media(max-width: 430px) {
+            grid-template-columns: 1fr;
+        }
     }
     button {
         display: block;
